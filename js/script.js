@@ -3,6 +3,8 @@ const lubang2 = document.getElementsByClassName('lubang')
 let score = document.getElementById('score')
 let hscore = document.getElementById('hscore')
 let tikus = document.getElementsByClassName('tikus')
+let modeHard = document.getElementById('modeHard')
+let papanGame = document.getElementById('game')
 let lubangTerakhir;
 let waktuSelesai = false;
 let onGoing = false
@@ -15,6 +17,8 @@ let maximalRand = 0
 const terKlik = new Audio('../assets/sound/kena.mp3')
 const selsaiMs = new Audio('../assets/sound/selesai.wav')
 const munculMs = new Audio('../assets/sound/boink.mp3')
+const bgMusicBtn = document.getElementById('playBg')
+const bgMusic = new Audio('../assets/sound/bg.mp3')
 
 // bgMusic.play()
 // console.log (lubang2, score, tikus)
@@ -30,6 +34,28 @@ function playAudio (url, loop=false) {
     let audio = new Audio(url)
     audio.play()
 }
+
+bgMusicBtn.addEventListener("click", function(){
+    if(bgMusic.paused){
+        bgMusic.play();
+        bgMusicBtn.innerHTML = "Pause Music";
+    } else {
+        bgMusic.pause();
+        bgMusicBtn.innerHTML = "Putar Music";
+    }
+});
+
+modeHard.addEventListener('click', function () {
+    // console.log (papanGame.classList)
+    if (papanGame.classList.value == "") {
+        papanGame.classList.add('gameBlur')
+        modeHard.textContent = 'Mode Easy (experimental)'
+    } else {
+        papanGame.classList.remove('gameBlur')
+        modeHard.textContent = 'Mode Hard (experimental)'
+    }
+})
+
 
 // memilih lubang secara random
 function randLubang (arr) {
