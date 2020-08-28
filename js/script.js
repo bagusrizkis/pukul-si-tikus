@@ -49,10 +49,10 @@ modeHard.addEventListener('click', function () {
     // console.log (papanGame.classList)
     if (papanGame.classList.value == "") {
         papanGame.classList.add('gameBlur')
-        modeHard.textContent = 'Mode Easy (experimental)'
+        modeHard.textContent = 'Mode Easy()'
     } else {
         papanGame.classList.remove('gameBlur')
-        modeHard.textContent = 'Mode Hard (experimental)'
+        modeHard.textContent = 'Mode Hard()'
     }
 })
 

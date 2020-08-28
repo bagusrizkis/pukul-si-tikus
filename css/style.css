@@ -96,6 +96,11 @@ button:active, a:active {
     transform: scale(0.5);
 }
 
+button.startGame:active {
+    transition: 1s;
+    transform: scale(0.5);
+}
+
 span.space {
     display: inline-block;
     width: 2rem;
