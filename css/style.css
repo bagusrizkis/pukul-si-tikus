@@ -93,7 +93,7 @@ button.startGame:hover {
     transform: scale(1.1);
 }
 
-button:active {
+button:active, a:active {
     transition: 1s;
     transform: scale(0.5);
 }

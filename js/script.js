@@ -14,11 +14,11 @@ let minimalRand = 0
 let maximalRand = 0
 
 // audio
-const terKlik = new Audio('./assets/sound/kena.mp3')
-const selsaiMs = new Audio('./assets/sound/selesai.wav')
-const munculMs = new Audio('./assets/sound/boink.mp3')
+const terKlik = new Audio('/assets/sound/kena.mp3')
+const selsaiMs = new Audio('/assets/sound/selesai.wav')
+const munculMs = new Audio('/assets/sound/boink.mp3')
 const bgMusicBtn = document.getElementById('playBg')
-const bgMusic = new Audio('./assets/sound/bg.mp3')
+const bgMusic = new Audio('/assets/sound/bg.mp3')
 
 // bgMusic.play()
 // console.log (lubang2, score, tikus)
