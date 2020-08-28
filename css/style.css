@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: greenyellow;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 7vh;
+    font-family: 'Sue Ellen Francisco', cursive;
+}
+
+header h2  {
+    text-align: center;
+    font-size: 5vh;
+    font-family: sans-serif;
+}
+
+h2 span {
+    padding: 0 2rem;
+    background-color: green;
+    border-radius: 2rem;
+}
+
+.container {
+    padding: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wrapper {
+    display: inline-block;
+}
+
+span.space {
+    display: inline-block;
+    width: 2rem;
+}
+
+header button {
+    padding: 10px 20px;
+}
+
+#tikus {
+    
+}
+
+#bola {
+    
+}
+
+#kelinci {
+    
+}
+
+.game {
+    margin: auto;
+    width: 70vw;
+    height: 60vh;
+    /* background: hotpink; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lubang {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+}
+
+.lubang:after {
+    display: block;
+    background: url(https://svgshare.com/i/8jj.svg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+}
+
+.tikus {
+    background: url(../assets/img/tikus.svg);
+    /* background: pink; */
+    background-size: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100%; /* terhiden - melebihi batas*/
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.bola {
+    background: blue;
+    background-size: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100%; /* terhiden - melebihi batas*/
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.kelinci {
+    background: yellow;
+    background-size: 30%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100%; /* terhiden - melebihi batas*/
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+
+.lubang.up .tikus {
+    top: 0;    /*muncul keatas*/
+    z-index: 1;
+}
+
+.scaleUp {
+    transition: .5s;
+    transform: scale(0.8);
+}
