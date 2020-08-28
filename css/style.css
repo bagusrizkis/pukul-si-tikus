@@ -22,8 +22,6 @@ html {
 
 body {
     background: #68b0ab;
-    /* background: url('../assets/img/bg.jpg'); */
-    /* background: url('https://cdn2.tstatic.net/jakarta/foto/bank/images/dekorasi-rumah323.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -122,23 +120,10 @@ header button {
     margin-left: 10px;
 }
 
-/* #tikus {
-    
-}
-
-#bola {
-    
-}
-
-#kelinci {
-    
-} */
-
 #game {
     margin: auto;
     width: 500px;
     height: 500px;
-    /* background: hotpink; */
     display: flex;
     flex-wrap: wrap;
     transition: 1s;
@@ -175,7 +160,6 @@ header button {
 .lubang:after {
     display: block;
     background: #1a1a2e;
-    /* background: linear-gradient(180deg, rgba(222,121,64,1) 0%, rgba(220,211,182,1) 17%, rgba(222,121,64,1) 81%, rgba(222,121,64,1) 100%); */
     background-position: bottom;
     background-repeat: no-repeat;
     content: '';
@@ -199,31 +183,6 @@ header button {
     height: 100%;
     transition: 0.3s;
 }
-
-/* .bola {
-    background: blue;
-    background-size: 30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    height: 100%;
-    transition: 0.3s;
-}
-
-.kelinci {
-    background: yellow;
-    background-size: 30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    height: 100%;
-    transition: 0.3s;
-} */
-
 
 .lubang.up .tikus {
     top: 0;    /*muncul keatas*/
