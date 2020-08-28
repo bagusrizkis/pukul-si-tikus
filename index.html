@@ -2,69 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pukul Si Tikus</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <title>Selamat Datang di Game Pukul Tikus</title>
+    <link rel="stylesheet" href="css/hp.css">
 </head>
 <body>
-    <header>
-        <!-- for titile -->
-        <h1>Pukul si Tikus</h1>
-        <h2><span id="score">0</span> <span id="hscore">0</span></h2>
-        
-        <div class="container">
-            <div class="wrapper">
-                <button onclick="playAudio('../assets/sound/bg.mp3', true)" id="playBg">▶️</button>
-            </div>
-            <div class="wrapper">
-                <span class="space">|</span>
-            </div>
-            <div class="wrapper">
-                <button onclick="mulaiGame(80, 800)" class="startGame">Mudah</button>
-                <button onclick="mulaiGame(80, 400)" class="startGame">Lumayan</button>
-                <button onclick="mulaiGame(80, 300)" class="startGame">Master</button>
-            </div>
-            <!-- <div class="wrapper">
-                <span class="space">|</span>
-            </div>
-            <div class="wrapper">
-                <button id="tikus" class="obj" data-obj="tikus">Tikus</button>
-                <button id="bola" class="obj" data-obj="bola">Bola</button>
-                <button id="kelinci" class="obj" data-obj="kelinci">Kelinci</button>
-            </div> -->
+    <div class="center">
+        <h1>Hai, <span id="nama">Anonim</span></h1>
+        <div>
+            <p>Kenalin aku Bagus, aku mendapat masalah di pipa goron-gorong pembuangan, disitu banyak sekali tikus yang bikin mampet karena suka membawa sampah masuk. Maukah kau membantuku untuk memukuli tikus-tikus tersebut. Si tikus akan keluar kalau diberi makan dengan lama sesuai dengan tingkat kesukaannya. Kita akan memancingnya keluar dengan makanan, lalu kamu bisa memukulnya kalau terlihat. 
+            </p>
+    
         </div>
-    </header>
+        <h2><a href="game.html">Oke Siap!</a></h2>
+    </div>
 
-    <main class="game">
-        <div class="lubang lubang1">
-            <div class="tikus"></div>
-        </div>
-        <div class="lubang lubang2">
-            <div class="tikus"></div>
-        </div>
-        <div class="lubang lubang3">
-            <div class="tikus"></div>
-        </div>
-        <div class="lubang lubang4">
-            <div class="tikus"></div>
-        </div>
-        <div class="lubang lubang5">
-            <div class="tikus"></div>
-        </div>
-        <div class="lubang lubang6">
-            <div class="tikus"></div>
-        </div>
-        <div class="lubang lubang7">
-            <div class="tikus"></div>
-        </div>
-        <div class="lubang lubang8">
-            <div class="tikus"></div>
-        </div>
-        <div class="lubang lubang9">
-            <div class="tikus"></div>
-        </div>
-    </main>
-
-    <script src="/js/script.js"></script>
+    <script src="js/hp.js"></script>
 </body>
 </html>

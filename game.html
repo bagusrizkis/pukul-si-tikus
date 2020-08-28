@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pukul Si Tikus</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- for titile -->
+        <div class="container">
+            <h1>Pukul si Tikus</h1>
+            <h2><span id="score">0</span> <span id="hscore">0</span></h2>
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <a href="index.html" class="nav">Home</a>
+                <button id="playBg" class="nav">Putar Music</button>
+                <button id="modeHard" class="nav">Mode Hard (experimental)</button>
+                <a href="help.html" class="nav">Bantuan</a>
+            </div>
+        </div>
+        <div class="container">
+            <p>Ayo pancing tikus dengan makanan: </p>
+            <div class="wrapper">
+                <button onclick="mulaiGame(80, 800)" class="startGame">Keju</button>
+                <button onclick="mulaiGame(80, 400)" class="startGame">Roti</button>
+                <button onclick="mulaiGame(80, 300)" class="startGame">Cabe</button>
+            </div>
+            <!-- <div class="wrapper">
+                <span class="space">|</span>
+            </div>
+            <div class="wrapper">
+                <button id="tikus" class="obj" data-obj="tikus">Tikus</button>
+                <button id="bola" class="obj" data-obj="bola">Bola</button>
+                <button id="kelinci" class="obj" data-obj="kelinci">Kelinci</button>
+            </div> -->
+        </div>
+    </header>
+
+    <main id="game">
+        <div class="lubang lubang1">
+            <div class="tikus"></div>
+        </div>
+        <div class="lubang lubang2">
+            <div class="tikus"></div>
+        </div>
+        <div class="lubang lubang3">
+            <div class="tikus"></div>
+        </div>
+        <div class="lubang lubang4">
+            <div class="tikus"></div>
+        </div>
+        <div class="lubang lubang5">
+            <div class="tikus"></div>
+        </div>
+        <div class="lubang lubang6">
+            <div class="tikus"></div>
+        </div>
+        <div class="lubang lubang7">
+            <div class="tikus"></div>
+        </div>
+        <div class="lubang lubang8">
+            <div class="tikus"></div>
+        </div>
+        <div class="lubang lubang9">
+            <div class="tikus"></div>
+        </div>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
